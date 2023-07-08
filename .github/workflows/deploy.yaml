@@ -19,7 +19,9 @@ jobs:
           node-version: 12
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install node-sass sass-loader --save-dev
 
       - name: Build
         run: npm run build
