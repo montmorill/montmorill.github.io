@@ -1,0 +1,245 @@
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+  --vt-c-indigo: #2c3e50;
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+.light {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+  --section-gap: 160px;
+}
+.dark {
+  --color-background: var(--vt-c-black-mute);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black);
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 400;
+}
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+template * {
+  width: 100vw;
+  color: var(--color-text);
+  background: var(--color-background);
+}
+p {
+  margin: 1em 0;
+  text-indent: 2em;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: #afb8c133;
+  border-radius: 6px;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  box-shadow: 0 0 1em 0 var(--color-border);
+  user-select: none;
+  justify-content: space-between;
+  color: var(--color-text);
+  background: var(--color-background-mute);
+  transition: all 0.3s ease-in-out;
+  top: 0;
+}
+nav .left,
+nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  height: 100%;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  gap: 0.4em;
+}
+nav a:hover {
+  background-color: var(--color-background-soft);
+}
+nav .icon {
+  width: 2em;
+  height: 2em;
+  background-size: 98%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.5em;
+}
+.montmorillonite {
+  background-image: url(/montmorillonite.svg);
+}
+.light .github {
+  background-image: url(https://github.githubassets.com/favicons/favicon.svg);
+}
+.dark .github {
+  background-image: url(https://github.githubassets.com/favicons/favicon-dark.svg);
+}
+.bilibili {
+  background-image: url(/bilibili.svg);
+}
+.qq {
+  background-image: url(/QQ.svg);
+}
+input[type="checkbox"].switch {
+  margin-right: 1em;
+  border-radius: 1em;
+  height: 2em;
+  width: 4em;
+  appearance: none;
+  position: relative;
+  box-sizing: content-box;
+  background: linear-gradient(135deg, #2afadf, #4c83ff);
+}
+input[type="checkbox"].switch:before {
+  transition: all 0.3s linear;
+  content: "";
+  width: 1.6em;
+  height: 1.6em;
+  background: linear-gradient(135deg, #fdeb71, #f8d800);
+  border-radius: 0.8em;
+  position: absolute;
+  left: 0.2em;
+  top: 0.2em;
+  box-shadow: inset 0 0 5px #ffffe0, 0 0 3px #ffffe0;
+}
+input[type="checkbox"].switch:checked {
+  background: linear-gradient(135deg, #232526, #414345);
+}
+input[type="checkbox"].switch:checked:before {
+  left: 2.2em;
+  background: linear-gradient(135deg, #334d50, #cbcaa5);
+}
+header {
+  margin-top: 3em;
+  height: 40vw;
+  max-height: 60vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2em;
+  background: url(https://api.yimian.xyz/img?type=wallpaper);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--color-text);
+  background: var(--color-background-soft);
+  transition: all 0.3s linear;
+}
+header h1 {
+  font-size: 5em;
+}
+main {
+  display: flex;
+  padding: 4em 6em;
+  gap: 3em;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: all 0.3s linear;
+}
+.main h3:before,
+.main h4:before,
+.main h5:before,
+.main h6:before {
+  content: "# ";
+}
+.main h3 {
+  font-size: 150%;
+  padding-left: 0;
+}
+.main h4 {
+  font-size: 140%;
+  padding-left: 1em;
+}
+.main h5 {
+  font-size: 130%;
+  padding-left: 2em;
+}
+.main h6 {
+  font-size: 120%;
+  padding-left: 3em;
+}
+.main p {
+  padding-left: 4em;
+}
+aside {
+  min-width: 20%;
+  max-width: 30%;
+}
+footer {
+  padding: 2em 3em;
+  color: var(--color-text);
+  background: var(--color-background-mute);
+  transition: all 0.3s linear;
+}
+@media screen and (max-width: 1024px) {
+  main {
+    padding: 3em 4em;
+    gap: 2em;
+  }
+  footer {
+    padding: 1em 2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    padding: 2em;
+    gap: 1em;
+  }
+  header h2,
+  aside {
+    display: none;
+  }
+  nav a span {
+    display: none;
+  }
+}
