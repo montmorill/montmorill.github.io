@@ -1,12 +1,12 @@
 # Index
 
-## [Mathematics](/Mathematics)
+## [Mathematics](/Mathematics/)
 
 Johann Carl Friedrich Gauß once said:
 
 > Mathematics is the queen of sciences and arithmetic the queen of mathematics.
 
-## [Python](/Python)
+## [Python](/Python/)
 
 Woz Kishod once said:
 
