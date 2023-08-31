@@ -34,7 +34,7 @@ export default defineConfig({
       },
       {
         icon: { svg: readFileSync("./public/QQ.svg", "utf-8") },
-        link: "/QQ?2696519745",
+        link: "/links/QQ?2696519745",
       },
     ],
   },
