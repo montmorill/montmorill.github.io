@@ -92,7 +92,9 @@ const customElements = [
 ];
 
 export default defineConfig({
-  head: [["style", {}, "svg { display: inline; }"]],
+  head: [
+    ["style", {}, 'mjx-container.MathJax[jax="SVG"] svg { display: inline; }'],
+  ],
 
   markdown: {
     config: (md) => {
