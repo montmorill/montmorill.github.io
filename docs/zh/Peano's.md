@@ -1,3 +1,9 @@
+<style>
+li {
+  list-style: upper-roman;
+}
+</style>
+
 # 皮亚诺公理
 
 首先我们给出五条公理来定义自然数：
@@ -177,7 +183,7 @@ $$
 
 于是我们便可以证明以下定理：
 
-### $0 \cdot m = 0$ {#0*m=0}
+### $0 \cdot m = 0$ {#0\*m=0}
 
 当 $m = 0$ 时，有
 
@@ -339,9 +345,3 @@ $$
 即 $P(b')$ 成立。
 
 由归纳公理得 $P$ 对任意自然数都成立。
-
-<style module>
-ol {
-  list-style: upper-roman;
-}
-</style>
