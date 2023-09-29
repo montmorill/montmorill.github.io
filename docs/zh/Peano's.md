@@ -19,7 +19,7 @@
 
 于是我们便可以证明以下定理：
 
-### m + 0 = m
+### $m + 0 = m$ {#m+0=m}
 
 当 $m = 0$ 时，有
 
@@ -46,20 +46,20 @@ $$
 
 由归纳公理得 $P$ 对任意自然数都成立。
 
-### 1 + 1 = 2
+### $1 + 1 = 2$ {#1+1=2}
 
 $$
 \begin{split}
-  1 + 1 &= 0' + 1    \\
-        &= (0 + 1)'  \\
-        &= 1'        \\
+  1 + 1 &= 0' + 1   \\
+        &= (0 + 1)' \\
+        &= 1'       \\
         &= 2
 \end{split}
 $$
 
 即证。
 
-### m' = 1 + m
+### $m' = 1 + m$ {#m'=1+m}
 
 $$
 \begin{split}
@@ -71,15 +71,15 @@ $$
 
 即证。
 
-### m' = m + 1
+### $m' = m + 1$ {#m'=m+1}
 
 当 $m = 0$ 时，有
 
 $$
 \begin{split}
-  m' &= 0'     \\
-     &= 1      \\
-     &= 0 + 1  \\
+  m' &= 0'    \\
+     &= 1     \\
+     &= 0 + 1 \\
      &= m + 1
 \end{split}
 $$
@@ -90,7 +90,7 @@ $$
 
 $$
 \begin{split}
-  m'' &= (m + 1)'  \\
+  m'' &= (m + 1)' \\
       &= m' + 1
 \end{split}
 $$
@@ -155,11 +155,11 @@ $$
 
 $$
 \begin{split}
-  a' + b &= (a + b)'     \\
-         &= (b + a)'     \\
-         &= b' + a       \\
-         &= (b + 1) + a  \\
-         &= b + (1 + a)  \\
+  a' + b &= (a + b)'    \\
+         &= (b + a)'    \\
+         &= b' + a      \\
+         &= (b + 1) + a \\
+         &= b + (1 + a) \\
          &= b + a'
 \end{split}
 $$
@@ -172,18 +172,18 @@ $$
 
 对于乘法，我们同样可以给出以下两条公理：
 
-1. 对于任意自然数 $m$，有 $m \times 0 = 0$
-2. 对于任意自然数 $m$、$n$，有 $m \times n' = m \times n + m$
+1. 对于任意自然数 $m$，有 $m \cdot 0 = 0$
+2. 对于任意自然数 $m$、$n$，有 $m \cdot n' = m \cdot n + m$
 
 于是我们便可以证明以下定理：
 
-### 0 × m = 0
+### $0 \cdot m = 0$ {#0*m=0}
 
 当 $m = 0$ 时，有
 
 $$
 \begin{split}
-  0 \times m &= 0 \times 0  \\
+  0 \cdot m &= 0 \cdot 0  \\
             &= 0
 \end{split}
 $$
@@ -194,8 +194,8 @@ $$
 
 $$
 \begin{split}
-  0 \times m' &= 0 \times m + 0  \\
-             &= 0 \times m       \\
+  0 \cdot m' &= 0 \cdot m + 0 \\
+             &= 0 \cdot m     \\
              &= 0
 \end{split}
 $$
@@ -204,17 +204,17 @@ $$
 
 由归纳公理得 $P$ 对任意自然数都成立。
 
-### m' × n = m × n + n
+### $m' \cdot n = m \cdot n + n$ {#m'n=mn+n}
 
 当 $n = 0$ 时，有
 
 $$
 \begin{split}
-  m' \times n &= m' \times 0    \\
-             &= 0               \\
-             &= 0 + 0           \\
-             &= m \times 0 + 0  \\
-             &= m \times n + n  \\
+  m' \cdot n &= m' \cdot 0    \\
+             &= 0             \\
+             &= 0 + 0         \\
+             &= m \cdot 0 + 0 \\
+             &= m \cdot n + n \\
 \end{split}
 $$
 
@@ -224,11 +224,11 @@ $$
 
 $$
 \begin{split}
-  m' \times n' &= m' \times n + m'         \\
-              &= m \times n + n + m'       \\
-              &= m \times n + n + (m + 1)  \\
-              &= m \times n + m + (n + 1)  \\
-              &= m \times n' + n'
+  m' \cdot n' &= m' \cdot n + m'          \\
+              &= m \cdot n + n + m'       \\
+              &= m \cdot n + n + (m + 1)  \\
+              &= m \cdot n + m + (n + 1)  \\
+              &= m \cdot n' + n'
 \end{split}
 $$
 
@@ -238,7 +238,7 @@ $$
 
 ### 乘法分配律
 
-即对于任意自然数 $m$，命题 $P$：$k \times (m + n) = k \times m + k \times n$ 对于任意自然数 $n$，$k$ 均成立。
+即对于任意自然数 $m$，命题 $P$：$k \cdot (m + n) = k \cdot m + k \cdot n$ 对于任意自然数 $n$，$k$ 均成立。
 
 证明过程如下：
 
@@ -246,11 +246,11 @@ $$
 
 $$
 \begin{split}
-  k \times (m + n) &= k \times (0 + n)        \\
-                  &= k \times n               \\
-                  &= 0 + k \times n           \\
-                  &= k \times 0 + k \times n  \\
-                  &= k \times m + k \times n
+  k \cdot (m + n) &= k \cdot (0 + n)        \\
+                  &= k \cdot n              \\
+                  &= 0 + k \cdot n          \\
+                  &= k \cdot 0 + k \cdot n  \\
+                  &= k \cdot m + k \cdot n
 \end{split}
 $$
 
@@ -260,11 +260,11 @@ $$
 
 $$
 \begin{split}
-  k \times (m' + n) &= k \times (m + n)'           \\
-                   &= k \times (m + n) + k         \\
-                   &= k \times m + k \times n + k  \\
-                   &= k \times m + k + k \times n  \\
-                   &= k \times m' + k \times n
+  k \cdot (m' + n) &= k \cdot (m + n)'          \\
+                   &= k \cdot (m + n) + k       \\
+                   &= k \cdot m + k \cdot n + k \\
+                   &= k \cdot m + k + k \cdot n \\
+                   &= k \cdot m' + k \cdot n
 \end{split}
 $$
 
@@ -274,7 +274,7 @@ $$
 
 ### 乘法结合律
 
-即对于任意自然数 $c$，命题 $P$：$(a \times b) \times c = a \times (b \times c)$ 对于任意自然数 $a$，$b$ 均成立。
+即对于任意自然数 $c$，命题 $P$：$(a \cdot b) \cdot c = a \cdot (b \cdot c)$ 对于任意自然数 $a$，$b$ 均成立。
 
 证明过程如下：
 
@@ -282,11 +282,11 @@ $$
 
 $$
 \begin{split}
-  (a \times b) \times c &= (a \times b) \times 0  \\
-                      &= 0                        \\
-                      &= a \times 0               \\
-                      &= a \times (b \times 0)    \\
-                      &= a \times (b \times c)
+  (a \cdot b) \cdot c &= (a \cdot b) \cdot 0  \\
+                      &= 0                    \\
+                      &= a \cdot 0            \\
+                      &= a \cdot (b \cdot 0)  \\
+                      &= a \cdot (b \cdot c)
 \end{split}
 $$
 
@@ -296,10 +296,10 @@ $$
 
 $$
 \begin{split}
-  (a \times b) \times c' &= (a \times b) \times c + (a \times b)  \\
-                       &= a \times (b \times c) + a \times b      \\
-                       &= a \times (b \times c + b)               \\
-                       &= a \times (b \times c')
+  (a \cdot b) \cdot c' &= (a \cdot b) \cdot c + (a \cdot b) \\
+                       &= a \cdot (b \cdot c) + a \cdot b   \\
+                       &= a \cdot (b \cdot c + b)           \\
+                       &= a \cdot (b \cdot c')
 \end{split}
 $$
 
@@ -309,7 +309,7 @@ $$
 
 ### 乘法交换律
 
-即对于任意自然数 $b$，命题 $P$：$a \times b = b \times a$ 对于任意自然数 $a$ 均成立。
+即对于任意自然数 $b$，命题 $P$：$a \cdot b = b \cdot a$ 对于任意自然数 $a$ 均成立。
 
 证明过程如下：
 
@@ -317,10 +317,10 @@ $$
 
 $$
 \begin{split}
-  a \times b &= a \times 0  \\
-            &= 0            \\
-            &= 0 \times a   \\
-            &= b \times a
+  a \cdot b &= a \cdot 0  \\
+            &= 0          \\
+            &= 0 \cdot a  \\
+            &= b \cdot a
 \end{split}
 $$
 
@@ -330,12 +330,18 @@ $$
 
 $$
 \begin{split}
-  a \times b' &= a \times b + a  \\
-             &= b \times a + a   \\
-             &= b' \times a
+  a \cdot b' &= a \cdot b + a \\
+             &= b \cdot a + a \\
+             &= b' \cdot a
 \end{split}
 $$
 
 即 $P(b')$ 成立。
 
 由归纳公理得 $P$ 对任意自然数都成立。
+
+<style module>
+ol {
+  list-style: upper-roman;
+}
+</style>

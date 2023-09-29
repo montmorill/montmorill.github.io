@@ -2,7 +2,9 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   themeConfig: {
-    outline: { level: "deep", label: "纲要" },
+    darkModeSwitchLabel: "深色模式",
+    lastUpdatedText: "上次更新",
+    outlineTitle: "纲要",
     nav: [
       { text: "主页", link: "/zh/" },
       { text: "赞助", link: "/zh/sponsor" },
