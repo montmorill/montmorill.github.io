@@ -4,8 +4,8 @@ import TexConfig from "./tex";
 import enConfig from "./en";
 import zhConfig from "./zh";
 
-const _ = (platform: string): { svg: string } => ({
-  svg: readFileSync(`./public/${platform}.svg`, "utf-8"),
+const _ = (filename: string): { svg: string } => ({
+  svg: readFileSync(`./public/${filename}.svg`, "utf-8"),
 });
 
 export default defineConfig({
