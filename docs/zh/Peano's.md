@@ -1,5 +1,5 @@
-<style>
-li {
+<style scoped>
+ol li {
   list-style: upper-roman;
 }
 </style>

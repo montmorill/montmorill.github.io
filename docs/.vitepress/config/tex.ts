@@ -95,13 +95,9 @@ export default defineConfig({
   head: [
     ["style", {}, 'mjx-container.MathJax[jax="SVG"] svg { display: inline; }'],
   ],
-
   markdown: {
-    config: (md) => {
-      md.use(mathjax3);
-    },
+    config: (md) => md.use(mathjax3),
   },
-
   vue: {
     template: {
       compilerOptions: {
