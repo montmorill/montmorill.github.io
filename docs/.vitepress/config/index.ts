@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 import { readFileSync } from "node:fs";
-import TexConfig from "./tex";
+import PluginsConfig from "./plugins";
 import enConfig from "./en";
 import zhConfig from "./zh";
 
@@ -27,7 +27,7 @@ export default defineConfig({
       { icon: _("QQ"), link: "/links/QQ?2696519745" },
     ],
   },
-  ...TexConfig,
+  ...PluginsConfig,
   locales: {
     root: {
       lang: "en-US",

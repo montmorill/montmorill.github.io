@@ -1,4 +1,5 @@
 import mathjax3 from "markdown-it-mathjax3";
+import footnote from "markdown-it-footnote";
 import { defineConfig } from "vitepress";
 
 const customElements = [
@@ -96,7 +97,7 @@ export default defineConfig({
     ["style", {}, 'mjx-container.MathJax[jax="SVG"] svg { display: inline; }'],
   ],
   markdown: {
-    config: (md) => md.use(mathjax3),
+    config: (md) => md.use(mathjax3).use(footnote),
   },
   vue: {
     template: {

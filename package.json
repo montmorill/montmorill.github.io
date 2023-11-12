@@ -1,12 +1,16 @@
 {
   "type": "module",
   "devDependencies": {
+    "markdown-it-footnote": "^3.0.3",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.0.0-rc.10"
   },
   "scripts": {
-    "docs:dev": "cd docs && vitepress dev",
-    "docs:build": "cd docs && vitepress build",
-    "docs:preview": "cd docs && vitepress preview"
+    "dev": "cd docs && vitepress dev",
+    "build": "cd docs && vitepress build",
+    "preview": "cd docs && vitepress preview"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
   }
 }
