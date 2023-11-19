@@ -3,7 +3,7 @@ layout: home
 title: 首页
 hero:
   name: 一块蒙脱石的
-  text: "> UtPπA / 乌托邦"
+  text: UtPπA / 乌托邦
   tagline: 金风玉露一相逢，便胜却人间无数。
   image:
     src: /logo.svg
@@ -14,14 +14,17 @@ features:
     link: ./Peano's
 head: [
     [
-      script,
+      style,
       {},
       '
-      let n = 0;
-      setInterval(() => {
-        document.querySelector(".VPHomeHero .text").textContent =
-          `> UtPπA / 乌托邦 ${++n % 2 ? "_" : ""}`;
-      }, 500);
+        @keyframes dummy-cursor { to { content: " _"; } }
+        @media (min-width: 960px) {
+        .VPHomeHero .text::before { content: "> "; }
+          .VPHomeHero .text::after {
+            content: "";
+            animation: dummy-cursor 1s infinite;
+          }
+        }
       '
     ]
   ]
