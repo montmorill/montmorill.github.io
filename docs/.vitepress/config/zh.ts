@@ -3,6 +3,9 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   themeConfig: {
     darkModeSwitchLabel: "深色模式",
+    sidebarMenuLabel: "菜单",
+    returnToTopLabel: "回到顶部",
+    langMenuLabel: "切换语言",
     lastUpdatedText: "上次更新",
     outlineTitle: "纲要",
     nav: [
